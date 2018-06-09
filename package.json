@@ -1,0 +1,55 @@
+{
+  "name": "luftstatus-tweet-warnings",
+  "version": "1.0.0",
+  "description": "AWS lambda function for tweeting warnings from luftstatus",
+  "license": "MIT",
+  "private": true,
+  "author": {
+    "name": "Geir Gåsodden",
+    "email": "geir.gasodden@pythonia.no",
+    "url": "https://github.com/zrrrzzt"
+  },
+  "main": "index.js",
+  "engines": {
+    "node": ">=8.11.2"
+  },
+  "scripts": {
+    "test": "standard && nsp check && ava",
+    "test-offline": "standard && ava",
+    "coverage": "nyc ava",
+    "coveralls": "nyc ava && nyc report --reporter=lcov && cat coverage/lcov.info | coveralls",
+    "standard-fix": "standard --fix",
+    "deploy": "claudia update --no-optional-dependencies",
+    "refresh": "rm -rf node_modules && rm package-lock.json && npm install",
+    "clear": "rm -rf node_modules && rm package-lock.json"
+  },
+  "keywords": [
+    "Alheimsins",
+    "Luftstatus.no",
+    "Twitter"
+  ],
+  "files": [
+    "index.js",
+    "lib/**"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alheimsins/luftstatus-tweet-warnings.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alheimsins/luftstatus-tweet-warnings/issues"
+  },
+  "homepage": "https://github.com/alheimsins/luftstatus-tweet-warnings#readme",
+  "devDependencies": {
+    "coveralls": "3.0.1",
+    "nsp": "3.2.1",
+    "nyc": "12.0.2",
+    "standard": "11.0.1"
+  },
+  "dependencies": {
+    "twit": "2.2.10"
+  },
+  "optionalDependencies": {
+    "aws-sdk": "2.254.1"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "lambda": {
+    "role": "arn:aws:iam::512952015228:role/luftstatus_execution",
+    "name": "luftstatus-tweet-warnings",
+    "region": "eu-central-1"
+  }
+}

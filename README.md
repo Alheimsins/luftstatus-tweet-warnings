@@ -1,2 +1,7 @@
 # luftstatus-tweet-warnings
-Serverless function for tweeting warnings from luftstatus
+
+AWS lambda function for tweeting warnings from luftstatus
+
+# License
+
+[MIT](LICENSE)
