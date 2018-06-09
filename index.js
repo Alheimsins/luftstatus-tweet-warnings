@@ -1,9 +1,10 @@
 const getData = require('./lib/get-data')
 const tweetWarning = require('./lib/tweet-warning')
-
+const zeroPadding = input => input.toString().length === 1 ? `0${input}` : `${input}`
 function createMessage(level, areas) {
+  const now = new Date()
   const list = areas.map(area => area.area)
-  return `Det er målt ${level} luftforurensning i: ${list.join(', ')}. https://luftstatus.no `
+  return `Det er målt ${level} luftforurensning, kl ${zeroPadding(now.getHours())}:${zeroPadding(now.getMinutes())}, i ${list.join(', ')}. https://luftstatus.no `
 }
 
 module.exports.handler = async (event, context, callback) => {
