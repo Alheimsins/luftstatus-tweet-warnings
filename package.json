@@ -19,7 +19,7 @@
     "coverage": "nyc ava",
     "coveralls": "nyc ava && nyc report --reporter=lcov && cat coverage/lcov.info | coveralls",
     "standard-fix": "standard --fix",
-    "deploy": "npx claudia update --no-optional-dependencies",
+    "deploy": "claudia update --no-optional-dependencies",
     "refresh": "rm -rf node_modules && rm package-lock.json && npm install",
     "clear": "rm -rf node_modules && rm package-lock.json"
   },
@@ -48,8 +48,7 @@
     "standard": "11.0.1"
   },
   "dependencies": {
-    "moment": "2.22.2",
-    "moment-timezone": "0.5.17",
+    "timezone": "1.0.13",
     "twit": "2.2.10"
   },
   "optionalDependencies": {
