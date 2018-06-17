@@ -3,4 +3,9 @@ node_js:
   - "8"
 after_success:
   - npm run coveralls
-  - npm run deploy
+deploy:
+  - provider: script
+    script: npm run deploy
+    skip_cleanup: true
+    on:
+      branch: master

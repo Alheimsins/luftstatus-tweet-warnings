@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/Alheimsins/luftstatus-tweet-warnings.svg?branch=master)](https://travis-ci.org/Alheimsins/luftstatus-tweet-warnings)
+[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
+
 # luftstatus-tweet-warnings
 
 AWS lambda function for tweeting warnings from luftstatus.
@@ -12,7 +15,7 @@ To create the function on aws first run
 $ npx claudia create --region <your-region> --role <your-role> --no-optional-dependencies
 ```
 
-Login to your AWS console and add the s3 trigger and environment variables
+Login to your AWS console and add the s3 trigger and setup environment variables
 
 ```sh
 access_token=your-twitter-access-token
@@ -28,6 +31,10 @@ warningsFileName=warnings-file-name
 ```sh
 $ npm run deploy
 ```
+
+### CI/CD with Travis
+
+Add `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY` to your Travis environment
 
 # License
 
