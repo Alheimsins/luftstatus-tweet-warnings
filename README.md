@@ -12,6 +12,17 @@ To create the function on aws first run
 $ npx claudia create --region <your-region> --role <your-role> --no-optional-dependencies
 ```
 
+Login to your AWS console and add the s3 trigger and environment variables
+
+```sh
+access_token=your-twitter-access-token
+access_token_secret=your-twitter-access-token-secret
+consumer_key=your-twitter-consumer-key
+consumer_secret=your-twitter-consumer-secret
+bucket=bucket-for-warnings-file
+warningsFileName=warnings-file-name
+```
+
 ### Updating deployment
 
 ```sh
