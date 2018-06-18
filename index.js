@@ -5,7 +5,7 @@ const gunzipData = require('./lib/gunzip-data')
 
 module.exports.handler = async (event, context, callback) => {
   const response = await getData()
-  const json = gunzipData(response.Body)
+  const json = await gunzipData(response.Body)
   const data = JSON.parse(json.toString('utf-8'))
   let jobs = []
   if (data.high.length > 0) {
