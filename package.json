@@ -52,6 +52,6 @@
     "twit": "2.2.11"
   },
   "optionalDependencies": {
-    "aws-sdk": "2.277.1"
+    "aws-sdk": "2.278.1"
   }
 }
