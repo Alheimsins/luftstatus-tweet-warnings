@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/Alheimsins/luftstatus-tweet-warnings.svg?branch=master)](https://travis-ci.org/Alheimsins/luftstatus-tweet-warnings)
+[![Build Status](https://travis-ci.com/Alheimsins/luftstatus-tweet-warnings.svg?branch=master)](https://travis-ci.com/Alheimsins/luftstatus-tweet-warnings)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 
 # luftstatus-tweet-warnings
