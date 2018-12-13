@@ -1,6 +1,6 @@
 {
   "name": "luftstatus-tweet-warnings",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "AWS lambda function for tweeting warnings from luftstatus",
   "license": "MIT",
   "private": true,
