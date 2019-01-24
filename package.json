@@ -47,7 +47,7 @@
     "standard": "12.0.1"
   },
   "dependencies": {
-    "timezone": "1.0.20",
+    "timezone": "1.0.22",
     "twit": "2.2.11"
   },
   "optionalDependencies": {
