@@ -7,7 +7,7 @@ module.exports.handler = async (event, context, callback) => {
   const response = await getData()
   const json = await gunzipData(response.Body)
   const data = JSON.parse(json.toString('utf-8'))
-  let jobs = []
+  const jobs = []
   if (data.high.length > 0) {
     const msg = createMessage('høy', data.high)
     jobs.push(tweetWarning(msg))
